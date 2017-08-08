@@ -53,11 +53,11 @@
   "size-limit": [
     {
       "path": "lib/browser.es5.esm.js",
-      "limit": "120 KB"
+      "limit": "1000 KB"
     },
     {
       "path": "lib/node.es5.esm.js",
-      "limit": "100 KB"
+      "limit": "1000 KB"
     }
   ],
   "homepage": "https://github.com/sebastian-software/edge-core#readme",
