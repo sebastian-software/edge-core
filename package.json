@@ -67,6 +67,7 @@
     "lean-intl": "^3.0.2",
     "node-fetch": "^1.7.3",
     "prop-types": "^15.5.10",
+    "query-string": "^5.0.0",
     "react": "^15.6.1",
     "react-apollo": "^1.4.15",
     "react-dom": "^15.6.1",
