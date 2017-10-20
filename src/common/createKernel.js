@@ -31,9 +31,12 @@ export default function createKernel(State, { state = defaultState, edge, reques
     request ? request.path : null
   )
 
-  let apollo = createApolloClient({
-    uri: null
-  })
+  const apolloClientConfig =
+    State.getApolloClientConfig && State.getApolloClientConfig() ?
+      State.getApolloClientConfig() :
+      { uri: null }
+
+  let apollo = createApolloClient(apolloClientConfig)
 
   let store = createReduxStore({
     reducers: State.getReducers(),
